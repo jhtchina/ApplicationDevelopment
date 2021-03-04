@@ -1,0 +1,8 @@
+1、进入/opt/Standard6/apache-tomcat-6.0.35/bin目录下，执行./shutdown.sh关闭程序 （更新前关闭tomcat）；
+2、输入ps -ef |grep java查看java进程；
+3、用kill -9 进程编号（杀掉跟/opt/Standard6/apache-tomcat-6.0.35相关的进程）；
+4、文件更新；
+5、在Xshell下输入命令 /opt/Standard6/apache-tomcat-6.0.35/webapps/ROOT 文件位置；
+6、在Xshell下输入命令 rm -rf /opt/Standard6/apache-tomcat-6.0.35/work/Catalina （删缓存）；   
+7、在当前目录（/opt/Standard6/apache-tomcat-6.0.35/bin）下，输入./startup.sh启动程序 （重启tomcat）；   
+8、输入exit断开连接，并测试更新是否成功。
