@@ -6,3 +6,11 @@
 6、在Xshell下输入命令 rm -rf /opt/Standard6/apache-tomcat-6.0.35/work/Catalina （删缓存）；   
 7、在当前目录（/opt/Standard6/apache-tomcat-6.0.35/bin）下，输入./startup.sh启动程序 （重启tomcat）；   
 8、输入exit断开连接，并测试更新是否成功。
+oracle重启
+[root@localhost ~]# su - root
+[root@localhost ~]# su - oracle
+[oracle@localhost ~]$ sqlplus /nolog
+SQL> conn sys/password as sysdba
+SQL> shutdown immediate;
+SQL> startup
+SQL> quit
